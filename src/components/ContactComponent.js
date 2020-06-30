@@ -130,9 +130,9 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                             <Row className='form-group'>
-                                <Label htmlfor='telnum' md={2}>Email</Label>
+                                <Label htmlfor='email' md={2}>Email</Label>
                                 <Col md={10}>
-                                    <Control.text model='telnum' id='email' name='email'
+                                    <Control.text model='.email' id='email' name='email'
                                         placeholder='Your Email'
                                         className='form-control'
                                         validators={{
@@ -140,7 +140,7 @@ class Contact extends Component {
                                         }} />
                                     <Errors 
                                         className='text-danger' 
-                                        model='.telnum'
+                                        model='.email'
                                         show='touched'
                                         messages={{
                                             required: 'Required',
