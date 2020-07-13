@@ -11,8 +11,6 @@ import { connect } from 'react-redux';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback} from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { FadeTransform } from 'react-animation-components';
-
 
 const mapStateToProps = state => {
   return {
@@ -34,10 +32,6 @@ const mapDispatchtoProps = (dispatch) => ({
 });
 
 class Main extends Component {
-
-  constructor(props){  
-    super(props);  
-  }  
 
   componentDidMount() {
     this.props.fetchDishes();
