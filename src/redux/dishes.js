@@ -17,5 +17,5 @@ export const Dishes = (state = {
 
             default:
                 return state;
-    }
+        }
 };
